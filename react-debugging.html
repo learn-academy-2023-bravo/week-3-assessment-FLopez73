@@ -65,11 +65,12 @@
         // No need to change anything ABOVE this line ^
 
         return (
+         <>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+          <button onClick={drawCard}>
             Click to Draw a Card
           </button>
-          <button onclick={shuffle}>
+          <button onClick={shuffle}>
             Return Cards and Shuffle Deck
           </button>
           <div style={handStyles}>
@@ -81,6 +82,7 @@
               )
             })}
           </div>
+         </>
         )
       }
 
@@ -92,3 +94,5 @@
     </script>
   </body>
 </html>
+
+<!-- There three errors where: missing react fragments to wrap the return tags which are now on line 68 and line 85, line 70 was missing callback function for the onClick button, laslty line 73 had a syntax error on onclick that needs to be written in camelCase. -->
